@@ -454,9 +454,10 @@ progress::-webkit-progress-value {
   transition: width 0.1s ease;
 }
 
-.bottom-info {
-  bottom: 0px;
-  position: fixed;
-  width: 100%;
+#footer {
+
+}
+#footer .bottom-info {
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 

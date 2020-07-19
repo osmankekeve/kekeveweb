@@ -1,21 +1,27 @@
-
 <div class="container-fluid p-0">
   <nav class="navbar top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo/kekeve_web_logo_white.png" class="img-thumbnail main-logo" alt="Kekeve System Developing" width="70%" />
+    </a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navb">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
+      <ul class="navbar-nav ml-auto mr-3">
+        <li class="nav-item p-2">
+          <a class="nav-link" routerLink="/mainPage" routerLinkActive="active">Anasayfa</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
+        <li class="nav-item p-2">
+          <a class="nav-link"  routerLink="/corporate" routerLinkActive="active">Kurumsal</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+        <li class="nav-item p-2">
+          <a class="nav-link" routerLink="/projects" routerLinkActive="active">Projeler</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">İletişim</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -24,8 +30,9 @@
       </form>
     </div>
   </nav>
-
-  <div class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-dark">
-    <div class="w-100 text-center text-white">KEKEVE Web & Mobile Developing © Copyright 2020</div>
+  <app-alert></app-alert>
+  <router-outlet></router-outlet>
+  <div id="footer" class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-dark p-4">
+    <div class="w-100 text-center bottom-info">KEKEVE Web & Mobile Developing © Copyright 2020</div>
   </div>
 </div>
