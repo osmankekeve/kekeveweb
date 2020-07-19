@@ -120,30 +120,12 @@
         <div class="col-sm-3" *ngIf="selectedRecord.data.primaryKey==null">
           <select class="form-control form-control-sm w-100" id="parentType" name="parentType" required
                   [disabled]="selectedRecord.data.primaryKey!=null"
-                  (change)="onChangeType($event.target.value)"
                   [(ngModel)]="selectedRecord.data.parentType">
             <option value="anyone">Seçilmedi</option>
             <option value="customer">Müşteri</option>
             <option value="employee">Personel</option>
           </select>
           <div class="invalid-feedback invalid-input-info">Lütfen müşteri seçiniz.</div>
-        </div>
-        <div class="col-sm-6" *ngIf="selectedRecord.data.parentType!='anyone' && selectedRecord.data.primaryKey==null">
-          <div class="row">
-            <div class="col-sm-6">
-              <label class="col-form-label float-left" for="parentPrimaryKey">Alıcı</label>
-            </div>
-            <div class="col-sm-6">
-              <select class="form-control form-control-sm w-100" id="parentPrimaryKey" name="parentPrimaryKey" required
-                      [disabled]="selectedRecord.data.primaryKey!=null"
-                      (change)="onChangeReceiver($event)"
-                      [(ngModel)]="selectedRecord.data.parentPrimaryKey">
-                <option value={{item.key}}
-                        *ngFor="let item of receiversList;">{{item.value}}</option>
-              </select>
-              <div class="invalid-feedback invalid-input-info">Lütfen Alıcı seçiniz.</div>
-            </div>
-          </div>
         </div>
         <div class="col-sm-6"
              *ngIf="selectedRecord.data.parentType=='anyone' && selectedRecord.data.primaryKey==null"></div>
