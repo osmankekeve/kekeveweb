@@ -7,9 +7,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "ng build --prod"
   },
   "private": true,
+  "resolutions": {
+    "@babel/preset-env": "^7.8.7"
+  },
   "dependencies": {
     "@agm/core": "^1.1.0",
     "@angular/animations": "^8.2.14",
@@ -63,6 +67,7 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.5.2",
+    "npm-force-resolutions": "0.0.3",
     "protractor": "^5.4.3",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",

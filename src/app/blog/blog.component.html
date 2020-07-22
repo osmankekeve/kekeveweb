@@ -1,0 +1,43 @@
+<div class="bg-soft-gray">
+  <div class="container mb-4 pt-3 underline-border">
+    <div class="row">
+      <div class="col ml-md-n3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0 pl-0">
+            <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col mr-md-n2">
+        <small id="idBlockCreate" class="float-right mt-3">Blok Başlık Oluştur</small>
+      </div>
+    </div>
+  </div>
+  <div class="container pb-4">
+    <div class="row">
+      <div class="col-sm-12 pt-3 pb-4 ml-md-n3">
+        <h3>
+          <span class="font-weight-600">Tüm </span>
+          <span class="font-weight-600 text-red">Blog Başlıkları</span>
+        </h3>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8 head-filter">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+          </div>
+          <input type="search" class="form-control filter-list-input p-4" placeholder="Blog Başlığı Ara"
+                 [(ngModel)]="searchText">
+        </div>
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+  </div>
+</div>

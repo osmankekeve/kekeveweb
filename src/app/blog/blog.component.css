@@ -1,0 +1,13 @@
+.underline-border {
+  border-bottom: 1px solid #666666;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+#idBlockCreate:hover {
+  text-decoration: underline;
+  color: #007bff;
+  cursor: pointer;
+}
