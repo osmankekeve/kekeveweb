@@ -10,6 +10,8 @@ import { UploaderComponent } from './uploader/uploader.component';
 import { GlobalUploadComponent } from './partials/global-upload/global-upload.component';
 import { DropzoneComponent } from './dropzone/dropzone.component';
 import { BlogComponent } from './blog/blog.component';
+import { ProjectComponent } from './project/project.component';
+import { LogOnComponent } from './partials/log-on/log-on.component';
 
 
 const routes: Routes = [
@@ -18,6 +20,7 @@ const routes: Routes = [
   {path: 'mail-sender', component: MailSenderComponent, pathMatch: 'full'},
   {path: 'file-uploader', component: UploaderComponent, pathMatch: 'full'},
   {path: 'blog', component: BlogComponent, pathMatch: 'full'},
+  {path: 'project', component: ProjectComponent, pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}// herzaman en sonda olmalı
 ];
 
@@ -29,7 +32,7 @@ export class AppRoutingModule { }
 
 export const routingComponents = [
   PageNotFoundComponent, NavBarComponent, SideNavBarComponent, AlertComponent, DropzoneComponent, NotificationComponent,
-  MailSenderComponent, GlobalUploadComponent, BlogComponent
+  MailSenderComponent, GlobalUploadComponent, BlogComponent, ProjectComponent, LogOnComponent
 ];
 
 // bunun sebebi her import edilen componenti app.module.ts e de yazmamız gerekli.

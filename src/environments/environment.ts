@@ -5,15 +5,45 @@
 export const environment = {
   production: true,
   firebase : {
-    apiKey: 'AIzaSyAL5RcUbEAYiTozSKc1IwDsoKck8WiWNsU',
-    authDomain: 'arcaccount-749aa.firebaseapp.com',
-    databaseURL: 'https://arcaccount-749aa.firebaseio.com',
-    projectId: 'arcaccount-749aa',
-    storageBucket: 'arcaccount-749aa.appspot.com',
-    messagingSenderId: '330828204231',
-    appId: '1:330828204231:web:b81f892d0a81c1ae'
+    apiKey: 'AIzaSyBsX359irdLOT0RQpNS9SJX5Mu84Bkcc4A',
+    authDomain: 'kekeveweb.firebaseapp.com',
+    databaseURL: 'https://kekeveweb.firebaseio.com',
+    projectId: 'kekeveweb',
+    storageBucket: 'kekeveweb.appspot.com',
+    messagingSenderId: '725452258721',
+    appId: '1:725452258721:web:6808f95b804ffbe2b41fe0',
+    measurementId: 'G-X83RBM08Y6'
   }
 };
+
+/*
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyBsX359irdLOT0RQpNS9SJX5Mu84Bkcc4A",
+  authDomain: "kekeveweb.firebaseapp.com",
+  databaseURL: "https://kekeveweb.firebaseio.com",
+  projectId: "kekeveweb",
+  storageBucket: "kekeveweb.appspot.com",
+  messagingSenderId: "725452258721",
+  appId: "1:725452258721:web:6808f95b804ffbe2b41fe0",
+  measurementId: "G-X83RBM08Y6"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+</script>
+ */
+
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file

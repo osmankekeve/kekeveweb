@@ -169,7 +169,7 @@ export const getCurrencyTypes = () => {
 };
 
 export const getUserTypes = () => {
-  return new Map([['admin', 'Administrator'], ['manager', 'Yönetici'], ['user', 'Kullanıcı']]);
+  return new Map([['systemAdmin', 'Sistem Admin'],['admin', 'Administrator'],  ['manager', 'Yönetici'], ['user', 'Kullanıcı']]);
 };
 
 export const getTerms = () => {

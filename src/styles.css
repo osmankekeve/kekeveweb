@@ -309,6 +309,10 @@ body {
   color: #ffc107 !important;
 }
 
+.text-dark-yellow {
+  color: #f0ab00 !important;
+}
+
 .text-red {
   color: #dc3545 !important;
 }
@@ -345,6 +349,10 @@ body {
 
 .fs-14 {
   font-size: 14px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
 }
 
 .col-sm-2-5 {

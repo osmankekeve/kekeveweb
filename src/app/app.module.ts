@@ -26,6 +26,7 @@ import { GlobalUploadService } from './services/global-upload.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DropzoneComponent } from './dropzone/dropzone.component';
+import { LogOnService } from './services/log-on.service';
 
 @NgModule({
     declarations: [
@@ -41,7 +42,7 @@ import { DropzoneComponent } from './dropzone/dropzone.component';
     })
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy},
-    InformationService, CookieService, LogService, AuthenticationService, ExcelService, GlobalUploadService, HttpClientModule
+    InformationService, CookieService, LogService, AuthenticationService, ExcelService, GlobalUploadService, HttpClientModule, LogOnService
   ],
   bootstrap: [AppComponent]
 })
