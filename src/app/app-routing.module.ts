@@ -11,7 +11,7 @@ import { GlobalUploadComponent } from './partials/global-upload/global-upload.co
 import { DropzoneComponent } from './dropzone/dropzone.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProjectComponent } from './project/project.component';
-import { LogOnComponent } from './partials/log-on/log-on.component';
+import { LogOnComponent } from './log-on/log-on.component';
 
 
 const routes: Routes = [
@@ -21,6 +21,7 @@ const routes: Routes = [
   {path: 'file-uploader', component: UploaderComponent, pathMatch: 'full'},
   {path: 'blog', component: BlogComponent, pathMatch: 'full'},
   {path: 'project', component: ProjectComponent, pathMatch: 'full'},
+  {path: 'log-on', component: LogOnComponent, pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}// herzaman en sonda olmalı
 ];
 

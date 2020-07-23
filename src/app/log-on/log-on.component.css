@@ -11,7 +11,7 @@
   color:#212529
 }
 
-#btnBlogCreate:hover {
+#idBlockCreate:hover {
   text-decoration: underline;
   color: #6c757d;
   cursor: pointer;

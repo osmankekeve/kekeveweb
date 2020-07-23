@@ -1,0 +1,52 @@
+<div class="bg-soft-gray">
+  <div class="container mb-4 pt-3 underline-border">
+    <div class="row">
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0 pl-0">
+            <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sistem Giriş</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+  <div class="container pb-4">
+    <div class="row">
+      <div class="col-sm-12 pt-3 pb-4">
+        <h2 class="text-center">
+          <span class="font-weight-600">Sistem </span>
+          <span class="font-weight-600 text-dark-yellow">Girişi</span>
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" placeholder="Enter email" id="email" [(ngModel)]="logOnData.email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password</label>
+          <input type="password" class="form-control" placeholder="Enter password" id="pwd" [(ngModel)]="logOnData.password">
+        </div>
+        <div class="form-group form-check text-center">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" [(ngModel)]="isCMAChecked"> Remember me
+          </label>
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-sm btn-primary"
+                  [disabled]="onTransaction"
+                  (click)="btnLogOn_Click()">{{loginText}}</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+  </div>
+</div>

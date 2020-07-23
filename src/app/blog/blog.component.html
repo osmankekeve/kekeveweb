@@ -11,7 +11,15 @@
         </nav>
       </div>
       <div class="col">
-        <small id="idBlockCreate" class="float-right mt-3" (click)="btnShowLogOn_Click()">Blok Başlık Oluştur</small>
+        <form class="form-inline float-right">
+          <small id="btnBlogCreate" class="float-right mt-3 mr-2">Blok Başlık Oluştur</small>
+          <button class="btn btn-sm btn-success float-right mt-3" type="button"
+                  *ngIf="!userDetails"
+                  (click)="btnShowLogOn_Click()" >Log On</button>
+          <button class="btn btn-sm btn-success float-right mt-3" type="button"
+                  *ngIf="userDetails"
+                  (click)="btnShowLogOff_Click()" >Log Off</button>
+        </form>
       </div>
     </div>
   </div>
