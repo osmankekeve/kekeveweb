@@ -4,7 +4,7 @@ import {InformationService} from '../services/information.service';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-blog',
+  selector: 'app-project',
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.css']
 })

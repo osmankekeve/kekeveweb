@@ -329,6 +329,14 @@ body {
   color: #aeaeae !important;
 }
 
+.text-gray {
+  color: #aeaeae !important;
+}
+
+.text-dark-gray {
+  color: #6c757d !important;
+}
+
 .text-dark-blue {
   color: #3c6f96 !important;
 }

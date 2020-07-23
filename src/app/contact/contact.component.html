@@ -1,0 +1,127 @@
+<div class="bg-soft-gray">
+  <div class="container mb-4 pt-3 underline-border">
+    <div class="row">
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0 pl-0">
+            <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">İletişim</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+  <div class="container pb-4">
+    <div class="row">
+      <div class="col-sm-12 pt-3 pb-4">
+        <h2>
+          <span class="font-weight-600">İletişim </span>
+          <span class="font-weight-600 text-red">Bilgileri ve Yöntemleri</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container pb-4 pt-3">
+  <div class="row">
+    <div class="col-lg-8 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <agm-map [latitude]="lat" [longitude]="lng">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+          </agm-map>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <h3>İletişim Bilgileri</h3>
+      <p>
+        Hürriyet Mahallesi Mülkiye Sokak Ekin Sitesi
+        <br>Yakacık, Kartal, İstanbul
+        <br>
+      </p>
+      <p>
+        <abbr title="Phone">P</abbr>: (539) 378-6560
+      </p>
+      <p>
+        <abbr title="Email">E</abbr>:
+        <a href="mailto:osmankekeve@gmail.com">
+          osmankekeve@gmail.com
+        </a>
+      </p>
+      <p>
+        <abbr title="Hours">H</abbr>: Pazartesi - Cuma: 9:00 AM to 5:00 PM
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container pb-4 pt-3 bg-soft-gray">
+  <div class="row">
+    <div class="col">
+      <div class="row pt-5">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-8 text-center">
+          <h2 class="font-weight-bold text-red">Sorularınız ve talepleriniz için</h2>
+          <div class="mt-3 text-dark-gray">Ürünler hakkında bilgi isteyebilir, demo talebinde bulunabilirsiniz. Uzmanlarımız sizi ihtiyacınıza göre en doğru çözüme yönlendirecektir.</div>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="row pt-5">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="form-group">
+            <i class="fa fa-2x fa-file-text-o text-red float-left mr-2"></i>
+            <p class="float-left p-1" style="line-height: 1.5">Bize yazın size ulaşalım</p>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Firma Adı" id="companyName" name="companyName">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Ad Soyad" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="E-Posta" id="eMail" name="eMail">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Telefon" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="content" name="content">
+              <option value="cash">Nakit</option>
+              <option value="creditCard">Kredi Kartı</option>
+              <option value="pNote">Senet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="description" name="description" cols="40" rows="2" placeholder="Açıklama"></textarea>
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label fs-14 text-dark-gray">
+              <input class="form-check-input" type="checkbox"> Kampanya ve duyurularla ilgili e-posta/sms
+              almak istemiyorum.
+            </label>
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox">
+              <a href="#" class="fs-14 text-red">Aydınlatma Metni</a>
+              <span class="fs-14 text-dark-gray">'ni okudum, kabul ediyorum.</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-danger">Gönder</button>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+  </div>
+</div>
