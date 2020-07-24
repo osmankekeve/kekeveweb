@@ -11,12 +11,9 @@ body {
 }
 
 .notPage {
-  background: url(assets/images/notpage.jpg) no-repeat;
+  background: url(assets/images/maintenance.png) no-repeat;
   padding: 20px;
-  width: 564px;
-  height: 161px;
   position: absolute;
-  left: 30%;
 }
 
 .notPage h2 {
@@ -24,13 +21,15 @@ body {
   top: 40px;
   left: 180px;
   color: #bf0b2d;
+  text-align: center;
 }
 
 .notPage p {
   position: absolute;
-  top: 80px;
+  top: 117px;
   left: 180px;
   font-size: 13px;
+  text-align: center;
 }
 
 .main-process-panel {
@@ -220,7 +219,7 @@ body {
 }
 
 .dashboard-work-area {
-  height: calc(100vh - 177px);
+  height: calc(100vh - 161px);
   overflow: auto;
   scrollbar-width: thin;
 }
