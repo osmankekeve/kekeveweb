@@ -13,6 +13,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ProjectComponent } from './project/project.component';
 import { LogOnComponent } from './log-on/log-on.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContactMailComponent } from './contact-mail/contact-mail.component';
 
 
 const routes: Routes = [
@@ -35,7 +36,7 @@ export class AppRoutingModule { }
 
 export const routingComponents = [
   PageNotFoundComponent, NavBarComponent, SideNavBarComponent, AlertComponent, DropzoneComponent, NotificationComponent,
-  MailSenderComponent, GlobalUploadComponent, BlogComponent, ProjectComponent, LogOnComponent, ContactComponent
+  MailSenderComponent, GlobalUploadComponent, BlogComponent, ProjectComponent, LogOnComponent, ContactComponent, ContactMailComponent
 ];
 
 // bunun sebebi her import edilen componenti app.module.ts e de yazmamız gerekli.

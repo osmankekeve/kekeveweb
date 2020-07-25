@@ -1,31 +1,10 @@
-.underline-border {
-  border-bottom: 1px solid #6c757d;
-  opacity: 0.8;
+.product-info {
+  cursor: default;
+  opacity: .6;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
 }
 
-.breadcrumb-item.active {
-  color: #6c757d;
-}
-
-.breadcrumb-item a {
-  color:#212529
-}
-
-#idBlockCreate:hover {
-  text-decoration: underline;
-  color: #6c757d;
-  cursor: pointer;
-}
-
-.blog-list {
-
-}
-
-.blog-list > li {
-  list-style: none;
-
-}
-.blog-list > li > p {
-  white-space: normal;
-  word-break: break-word;
+.product-info:hover {
+  opacity: 1;
 }

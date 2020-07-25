@@ -175,6 +175,11 @@ body {
   margin: 2px auto;
 }
 
+.underline-border {
+   border-bottom: 1px solid #6c757d;
+   opacity: 0.8;
+ }
+
 /* Safari */
 @-webkit-keyframes spin {
   0% {
@@ -298,6 +303,10 @@ body {
 
 .bg-soft-black {
   background-color: #3c3c3c !important;
+}
+
+.bg-cream {
+  background-color: #fcfdf1 !important;
 }
 
 .text-orange {
